@@ -72,7 +72,7 @@ else {
       filteredShoes = filteredShoes.filter(shoe => shoe.price <= maxPrice);
     }
 
-    res.send(`<h1>Filtered Shoes:</h1><ul>${filteredShoes.map(shoe => `<li>${shoe.name} - $${shoe.price}</li>`).join('')}</ul>`);
+    res.json(filteredShoes);
   });
 
 //Port 3000 code part
